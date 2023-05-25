@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RandomActivity">
+
+
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="RANDOM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMax" />
+
+    <EditText
+        android:id="@+id/txtMin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/min"
+        app:layout_constraintTop_toTopOf="@+id/min"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <EditText
+        android:id="@+id/txtMax"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="100"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/max"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toEndOf="@+id/max"
+        app:layout_constraintTop_toTopOf="@+id/max"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="Min:"
+        android:textColor="#606060"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle" />
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Max: "
+        android:textColor="#606060"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Result: "
+        android:textColor="#606060"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRandom" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#106A62"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Result"
+        app:layout_constraintStart_toEndOf="@+id/Result"
+        app:layout_constraintTop_toTopOf="@+id/Result"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="True Random Number Generator"
+        android:textColor="#106A62"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="BACK"
+        android:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
